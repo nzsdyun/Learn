@@ -1,0 +1,3 @@
+        Terms of Use
+1. In order to provide users with a better experience. Our app requires Camera and microphone permissions to use the app's photo and recording features.
+2. However, in this application, the application only uses Camera and microphone permissions to meet the needs of users, rather than collecting user information.
