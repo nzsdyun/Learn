@@ -1,0 +1,21 @@
+1.
+https://www.jianshu.com/p/3dc56886c2eb
+https://www.jianshu.com/u/90ab66c248e6
+https://www.jianshu.com/p/5c926f878c96
+https://blog.csdn.net/wantflydacheng/article/list/3?t=1
+https://wiki.jikexueyuan.com/project/java-concurrent/starvation-and-fairness.html
+http://tutorials.jenkov.com/java-util-concurrent/executorservice.html
+https://www.lanzous.com/b00n3zhva 密码：3age
+
+https://blog.csdn.net/javazejian/article/details/72828483
+
+https://segmentfault.com/u/codershamo
+
+https://www.kancloud.cn/hanghanghang/os/116761
+
+https://wiki.jikexueyuan.com/project/java-concurrent/thread-communication.html
+
+http://gee.cs.oswego.edu/dl/papers/aqs.pdf
+http://ifeve.com/aqs-3/
+
+https://irl.cs.ucla.edu/~yingdi/web/paperreading/whymb.2010.06.07c.pdf

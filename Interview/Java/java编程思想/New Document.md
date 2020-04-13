@@ -1,0 +1,185 @@
+###泛型
+####什么是泛型
+泛型将接口的概念进一步延伸，“泛型”表面意思是广泛的类型，类、接口和方法代码可以应用于非常广泛的类型，代码与他们能够操作的数据类型不再绑定在一起，同一套代码，可以用于多种数据类型，这样，不仅可以复用代码，降低耦合，同时，还可以提高代码的可读性和安全性。
+####泛型类、泛型接口、泛型方法
+#####泛型类
+泛型类和普通类声明最后的区别在于类名后面加上尖括号，尖括号里面加上类型参数（多个类型参数以逗号进行分割）
+
+<code>
+
+	public class Pair<U, V> {
+		
+		U first;
+		V second;
+		
+		public Pair(U first, V second) {
+			this.first = first;
+			this.second = second;
+		}
+		
+		public U getFirst() {
+			return first;
+		}
+
+		public V getSecond() {
+			return second;
+		}
+	
+	}
+</code>
+> 提示： 泛型就是类型的参数化，处理的数据类型不是固定的，而是可以作为参数传入。
+
+#####泛型接口
+泛型类的声明和泛型类的声明无多大区别，也只是在接口名后面加上尖括号，尖括号里面加上类型参数（多个类型参数以逗号进行分割）。
+#####泛型方法
+泛型方法的声明为在方法的返回值前面加上类型参数的声明（尖括号里面加上类型参数），泛型方法与这个类是否为泛型类无直接关系
+
+<code>
+
+	public static <U, V> Pair<U, V> makePair(U first, V second) {
+		Pair<U,V> pair = new Pair<>(first, second);
+		return pair;	
+	}
+</code>
+####泛型原理
+对于泛型类，java编译器会将泛型代码转换为普通的非泛型代码，将类型参数擦除，替换为Object，插入必要的强制类型转换。
+>提示：因为Java泛型是编译器通过类型擦除来实现的，所以在程序的运行过程中是不知道泛型的实际类型参数的。
+####为啥要设计泛型
+1. 泛型是Java 1.5以后才支持的，为了兼容以前的JDK版本
+2. 更好的安全性。
+3. 更好的可读性。
+
+使用泛型，java的开发环境或者编译器会在编译期间检测是否用错类型，同时避免进行类型转换。
+
+####泛型参数限定
+>泛型的类型参数可以为其指定一个边界范围。这个边界可以是某个具体类、接口或者某个类型参数。
+#####某个具体类
+指定类型参数的上界为某个具体类时，使用extends来指定，如下所示：
+
+<code>
+
+	public class NumberPair<U extends Number, V extens Number> extends Pair<U, V> {
+		public NumberPair(U first, V second) {
+			super(first, second);
+		}
+	}
+</code>
+
+> 提示：，当指定边界范围类后，java编译器在进行类型擦除之后就不会将其转换成Object对象，而是会将其转换成那个指定的边界类。
+
+#####某个具体接口
+指定某个具体接口为类型参数的上界时，其语法和指定具体类一样，表示这个泛型参数必须实现某个具体的接口。
+
+<code>
+	public <T extends Comparable<T>> T max(T[] arr) {
+		T max = arr[0];
+		for(int i = 1; i < arr.length; i++) {
+			if (arr[i].comparaTo(max) > 0) {
+				max = arr[i];
+			}
+		}
+		return max;
+	}
+</code>
+上例所示：当所有在泛型数组中找到其最大的值，我们需要这个泛型数组的类型是可排序的，也就是说他需要实现Comparable接口。
+#####某个类型参数
+其语法跟指定某个类、某个接口的语法一样。
+
+<code>
+
+	public <T extends E> void add(DynamicArray<T> c) {
+		for(int i = 0; i < c.size(); i++) {
+			add(c.get(i));
+		}
+	}
+</code>
+指定某个类型参数为类型参数的上界，在容器中有着一个好大的用户，方便容器插入其子类型的的数据，如：
+
+<code>
+
+	DynamicArray<Number> numbers = new DynamicArray<>();
+	DynamicArray<Integer> ints = new DynamicArray<>();
+	ints.add(100);
+	ints.add(34);
+	numbers.addAll(ints);
+</code>
+>提示：Interger是Number的子类型，并不能等同的认为DynamicArray<Integer>就是DynamicArray<Number>的子类型。
+
+####DynamicArray实现代码
+上述所使用的DynamicArray的代码实现如下：
+
+<code>
+
+	public class DynamicArray<E> {
+		private static final int DEFAULT_SIZE = 100;
+		private static final int MAX_ARRAY_SIZE = Integer.MAX_VALUE - 8;
+		private static final Object[] EMPTY_ELEMENTDATA = {};
+		private int size;
+		private Object[] element;
+
+		public DynamicArray() {
+			this.element = EMPTY_ELEMENTDATA;
+		}
+		
+		public DynamicArray(int initialCapacity) {
+			if (initialCapacity < 0)
+            	throw new IllegalArgumentException("Illegal Capacity: "+ initialCapacity);
+			this.element = new Object[initialCapacity];
+		}
+
+		public boolean add(E e) {
+			ensureCapacity(size + 1)；
+			element[size++] = e;
+			return true;
+		}
+
+		public boolean remove(E e) {
+			if (e == null) {
+				for(int i = 0; i < size; i++) {
+					if (element[i] == null) {
+						fastRemove(i);
+						return true;
+					}
+				}
+			} else {
+				for (int i = 0; i < size; i++) {
+					if (e.equels(element[i])) {
+						fastRemove(i);
+						return true;
+					}
+				}
+			}
+		}
+	
+		public int size() {
+			return size;
+		}
+
+		private void fastRemove(int index) {
+			int numMoved = size - index - 1;
+			if (numMoved > 0) 
+				System.arrayCopy(element, index + 1, element, index, numMoved);
+			element[--size] = null;
+		}
+
+		private void ensureCapacity(int minCapacity) {
+			if (element == EMPTY_ELEMENTDATA) {
+				minCapacity = Math.max(DEFAULT_SIZE, size +１);
+			}
+			if (minCapacity - element.length > 0) {
+				int oldCapacity = elementData.length;
+				int newCapacity = oldCapacity + (oldCapacity >> 1);
+				if (newCapacity - minCapacity < 0) {
+					newCapacity = minCapacity;
+				}
+				if (newCapacity - minCapacity > MAX_ARRAY_SIZE) {
+					newCapacity = MAX_ARRAY_SIZE;
+				}
+			}
+			this.element = Arrays.copy(element, newCapacity);
+		}
+		
+	}
+</code>
+
+

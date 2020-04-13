@@ -1,0 +1,33 @@
+﻿1. 博客
+https://blog.csdn.net/qq_27248989/article/details/100026297
+https://www.jianshu.com/p/719fc4758813
+https://blog.csdn.net/aigestudio/article/details/41447349
+https://www.jianshu.com/p/238d1b753e64
+https://www.jianshu.com/p/982a83271327
+https://blog.csdn.net/huachao1001/article/category/2862631/2
+https://www.jianshu.com/u/7f26e9b13731
+https://www.cnblogs.com/y1ran/p/12144385.html
+
+2. Test
+https://developer.android.com/training/testing/index.html
+
+３．Anr
+http://www.sohu.com/a/304539388_120054825
+https://blog.csdn.net/sinat_22657459/article/details/52780759
+
+4. DataBinding
+https://blog.csdn.net/u012933743/article/details/78207447
+
+5. Keyguard
+https://blog.csdn.net/wzy_1988/article/details/49659935
+https://blog.csdn.net/yj934672573/article/details/54571704
+
+6. Call
+https://www.jianshu.com/p/4ae2a7512787
+https://developer.android.com/guide/topics/connectivity/telecom/selfManaged
+7. google study guide
+https://developers.google.com/certification/associate-android-developer/study-guide
+https://developer.android.com/courses/fundamentals-training/toc-v2
+
+8. source insight
+https://www.jianshu.com/p/b7b19bcc0425

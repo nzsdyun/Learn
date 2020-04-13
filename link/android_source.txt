@@ -1,0 +1,123 @@
+how to study android system.
+https://blog.csdn.net/carter_yu/article/details/50970007
+1. android source build
+https://www.jianshu.com/p/367f0886e62b
+2. android source study
+http://gityuan.com/tags/#android
+http://gityuan.com/archive/
+https://www.zhihu.com/question/36028926
+https://blog.csdn.net/qq_23547831/article/details/51224992
+https://www.kancloud.cn/alex_wsc/android_depp/412845
+https://www.jianshu.com/u/d3c759ecfb01
+https://pomelojiang.github.io/android_system_booting_1.html
+https://www.ibm.com/developerworks/cn/linux/l-cn-sysfs/index.html
+https://www.aiwalls.com/category/android%e8%bb%9f%e9%ab%94%e9%96%8b%e7%99%bc%e6%95%99%e5%ad%b8
+https://blog.csdn.net/prife/article/list/1?
+https://www.ibm.com/developerworks/cn/views/linux/libraryview.jsp?site_id=10&contentarea_by=Linux&sort_by=Date&sort_order=1&start=1&end=100&topic_by=&product_by=&type_by=%E6%89%80%E6%9C%89%E7%B1%BB%E5%88%AB&show_abstract=true&search_by=&industry_by=&series_title_by=
+3. dialer
+http://www.cnblogs.com/lance2016/p/6002371.html
+4. SystemUI
+https://www.jianshu.com/p/6482281623e0
+4-1. Battery
+https://blog.csdn.net/qq759981398/article/details/73155782
+https://blog.csdn.net/xubin341719/article/details/8497830
+4-2: Keyguard
+https://www.jianshu.com/p/a264ca4f205e
+6. KeyEvent
+http://newandroidbook.com/files/AndroidInput.pdf
+http://gityuan.com/2017/01/01/input-anr/
+https://www.jianshu.com/p/76b3e1913f51
+http://mf99coding.logdown.com/posts/162658-android-keyevent-processes
+https://www.jianshu.com/p/2f28386706a0
+7. IME
+https://developer.android.com/guide/topics/text/creating-input-method
+8. Binder
+http://gityuan.com/2015/10/31/binder-prepare/
+https://juejin.im/post/5acccf845188255c3201100f
+https://blog.csdn.net/universus/article/details/6211589
+http://gityuan.com/2015/10/31/binder-prepare/
+https://blog.csdn.net/luoshengyang/article/details/6618363
+http://gityuan.com/2015/10/31/binder-prepare/
+http://www.cnblogs.com/innost/archive/2011/01/09/1931456.html
+
+9. Android source
+https://blog.csdn.net/ljx646566715/article/details/81989116
+
+https://blog.51cto.com/ticktick/category11.html
+
+http://gityuan.com/android/
+
+https://www.kancloud.cn/alex_wsc/android_depp/412860
+https://my.oschina.net/u/2963604/blog/1648931
+
+10. binder
+https://blog.csdn.net/happylishang/article/details/51784834
+https://www.jianshu.com/p/c0170ceea95a
+https://blog.csdn.net/happylishang/article/details/51784834
+https://www.jianshu.com/p/adaa1a39a274
+https://blog.csdn.net/chenying126/article/details/78989413
+
+11.
+https://www.jianshu.com/p/0680be542f6e
+
+12. 音频
+http://www.360doc.com/content/14/0312/11/15700426_359820083.shtml
+https://blog.csdn.net/shenmay2012/article/details/41648157?utm_source=blogxgwz4
+
+https://www.jianshu.com/p/c67fd0c2b379
+
+https://blog.csdn.net/martingang/article/details/8045701
+
+https://zenki2001cn.github.io/Wiki/Android/AudioPolicyService.html
+
+//按键音
+https://www.jianshu.com/p/e7a28189c7b7
+https://blog.csdn.net/xct841990555/article/details/88244087
+
+https://juejin.im/entry/5a1cda475188254a701ec89b
+
+https://www.jianshu.com/p/ad591f44e780
+https://www.jianshu.com/p/e4357f00a43e
+https://blog.csdn.net/callmemaha/article/details/96829293
+https://www.ktanx.com/blog/p/2408
+
+13.查看源码
+http://www.voidcn.com/article/p-khnwxamq-beu.html
+https://blog.csdn.net/u010940300/article/details/50053111
+https://github.com/nzsdyun/BeesAndroid
+https://juejin.im/post/5dcab476f265da4d0a68e3ab
+
+https://www.wanandroid.com/navi
+
+14. 屏幕刷新机制
+https://www.jianshu.com/p/0d00cb85fdf3
+https://zhuanlan.zhihu.com/p/77390590
+
+15.动画运行原理
+https://www.jianshu.com/p/48317612c164
+
+16.Choreographer
+https://blog.csdn.net/stven_king/article/details/80098845
+
+17. DisplaySync
+https://echuang54.blogspot.com/2015/01/dispsync.html
+
+18. zygote
+
+init
+https://blog.csdn.net/Prife/article/details/41413261
+https://blog.csdn.net/Prife/article/details/41777245
+zygote
+https://www.jianshu.com/p/0d73ac2bf7fb
+https://www.jianshu.com/p/864e70eb80dd
+https://www.jianshu.com/p/ef49e0ce0894
+
+
+http://gityuan.com/2016/02/05/android-init/
+http://gityuan.com/2016/02/05/android-init/
+https://www.jianshu.com/p/864e70eb80dd
+http://gityuan.com/2016/02/05/android-init/
+https://www.cnblogs.com/wangjie1990/p/11310913.html
+https://www.aiwalls.com/android%E8%BB%9F%E9%AB%94%E9%96%8B%E7%99%BC%E6%95%99%E5%AD%B8/30/21065.html
+
+

@@ -1,0 +1,9 @@
+1.互联网职场
+https://blog.csdn.net/xianaoshi/article/details/103248846
+2. Memory barrier
+https://irl.cs.ucla.edu/~yingdi/web/paperreading/whymb.2010.06.07c.pdf
+https://zhuanlan.zhihu.com/p/66085562
+3. JSR133
+http://ifeve.com/wp-content/uploads/2014/03/JSR133%E4%B8%AD%E6%96%87%E7%89%88.pdf
+4. moniter
+https://www.jianshu.com/p/32e1361817f0

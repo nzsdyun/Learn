@@ -1,0 +1,22 @@
+1. android source build
+https://source.android.com/setup/build/running
+https://www.jianshu.com/p/367f0886e62b
+https://juejin.im/entry/58c63e34da2f605dc5aa992f
+https://www.digitalocean.com/community/tutorials/how-to-build-android-roms-on-ubuntu-16-04#prerequisites
+
+https://www.cnblogs.com/liumce/p/8027559.html
+
+https://blog.csdn.net/u011913612/article/details/51878356?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
+
+2. android build study
+https://www.ibm.com/developerworks/cn/opensource/os-cn-android-build/index.html
+3. android mk file 
+http://android.mk/
+https://blog.csdn.net/lzh398651363/article/details/73527245
+3.1 android mk引用
+https://blog.csdn.net/gdutxiaoxu/article/details/78187420
+
+
+https://juejin.im/entry/58c63e34da2f605dc5aa992f
+4. android source study
+https://www.zhihu.com/question/36028926

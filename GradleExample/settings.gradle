@@ -1,0 +1,3 @@
+include ':app', ':notepad'
+project(':notepad').projectDir = new File(settingsDir, 'notepad')
+//project(':notepad').buildFileName = '../notepad/build_lib.gradle'

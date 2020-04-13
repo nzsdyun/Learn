@@ -1,0 +1,18 @@
+https://developer.android.com/studio/debug/
+
+1. framework
+https://www.jianshu.com/p/747e3698aca8
+
+https://my.oschina.net/u/2963604/blog/1648931
+
+https://www.kancloud.cn/alex_wsc/android_depp/412860
+
+2. Github源码查看工具
+http://www.jcodecraeer.com//a/anzhuokaifa/androidkaifa/2017/1009/8575.html
+
+https://www.zendesk.com/help-center-closed/?utm_content=insightio.zendesk.com&utm_source=helpcenter-closed&utm_medium=poweredbyzendesk
+Sourcegraph for GitHub
+insight.io for github
+
+3. 源码阅读
+https://www.zhihu.com/question/19759722

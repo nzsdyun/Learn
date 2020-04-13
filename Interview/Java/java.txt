@@ -1,0 +1,15 @@
+1.java 8
+https://www.ibm.com/developerworks/cn/java/j-java8idioms10/index.html
+2. java stream
+https://www.ibm.com/developerworks/cn/java/j-java-streams-2-brian-goetz/index.html?ca=drs-
+https://www.ibm.com/developerworks/cn/java/j-lo-java8streamapi/index.html
+https://www.jianshu.com/p/3dc56886c2eb
+https://www.jianshu.com/p/7eaa0969b424
+3.volatile
+https://www.jianshu.com/p/ccfe24b63d87
+4. AQS
+https://blog.csdn.net/mulinsen77/article/details/84583716
+5. CLH
+https://www.jianshu.com/p/0f6d3530d46b
+6. thread
+https://my.oschina.net/u/862741/blog/2967250

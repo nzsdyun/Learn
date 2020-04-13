@@ -1,0 +1,173 @@
+https://github.com/CyC2018
+https://github.com/CyC2018/CS-Notes/blob/master/notes/剑指%20Offer%20题解%20-%20目录.md
+1. 数组中重复的数字
+https://github.com/CyC2018/CS-Notes/blob/master/notes/3.%20数组中重复的数字.md
+public boolean duplicate(int[] nums, int length, int[] duplication) {
+	if (nums == null || length,  <= 0) return false;
+	for (int i = 0; i < length; i++) {
+		while(nums[i] != i) {
+			if (nums[i] == nums[nums[i]]) {
+				duplication[0] = nums[i];
+				return true;
+			}
+			swap(nums, i, nums[i]);
+		}
+	}
+	return false;
+}
+
+public void swap(int[] nums, int i, int j) {
+	int temp = nums[i];
+	nums[i] = num[j];
+	nums[j] = temp;
+}
+
+2. 二维数组中的查找
+https://github.com/CyC2018/CS-Notes/blob/master/notes/4.%20二维数组中的查找.md
+public boolean Find(int target, int[][] matrix) {
+	if (matrix == null || matrix.length==0 || matrix[0].length == 0) {
+		return false;
+	}
+	int rows = matrix.length;
+	int cols = matrix[0].length;
+	int r = 0, c = cols - 1;
+	while (r <= rows - 1 && c >= 0) {
+		if (target == matrix[r][c]) {
+			return true;
+		} else if (target < matrix[r][c]) {
+			r--;
+		} else {
+			c++;
+		}
+	}
+	return false;
+}
+3. 替换空格
+https://github.com/CyC2018/CS-Notes/blob/master/notes/5.%20替换空格.md
+public String replaceSpace(StringBuffer str) {
+	int p1 = str.length() - 1;
+	for (int i = 0; i < str.length() -1; i++) {
+		if (str.charAt(i) == ' ') {
+			str.apand('   ');
+		}
+	}
+	int p2 = str.length() - 1;
+	while (p1 >=0 && p1 <= p2) {
+		char c = str.charAt(p1--);
+		if (c == ' ') {
+			str.setCharAt(p2--, '0');
+			str.setCharAt(p2--, '2');
+			str.setCharAt(p2--, '2');
+		} else {
+			str.setCharAt(p2--, c);
+		}
+	}
+	return str.toString();
+	
+}
+4. 从尾到头打印链表
+https://github.com/CyC2018/CS-Notes/blob/master/notes/6.%20从尾到头打印链表.md
+1. 使用递归
+public ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
+	List<Integer> result = new ArrayList<>();
+	if (lisNode != null) {
+		printListFromTailToHead(listNode.next);
+		result.add(listNode.val);
+	}
+	return result;
+}
+2. 使用头插法
+public ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
+	ListNode dummy = new ListNode(0);
+	while (listNode != null) {
+		ListNode next = listNode.next;
+		listNode.next = dummy.next;
+		dummy.next = listNode;
+		listNode = next;
+	}
+
+	List<Integer> result = new ArrayList<>();
+	ListNode head = dummy.next;
+	while (head != null) {
+		result.add(head.val);
+		head = head.next;
+	}
+	return result;
+}
+3. 使用栈
+public ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
+	Deque<Integer> stack = new ArrayDeque<Integer>();
+	while (listNode != null) {
+		stack.push(listNode.val);
+		listNode = listNode.next;
+	}
+	
+	List<Integer> result = new ArrayList<Integer>();
+	while(!stack.isEmpty()) {
+		result.add(stack.pop());
+	}
+	return result;
+}
+4. 重建二叉树
+https://github.com/CyC2018/CS-Notes/blob/master/notes/7.%20重建二叉树.md
+
+private Map<Integer, Integer> indexForInOrders = new HashMap<>();
+public TreeNode reConstructBinaryTree(int[] pre, int[] in) {
+	for (int i = 0; i < in.length; i++) {
+		indexForInOrders.put(in[i], i);
+	}
+	return reConstructBinaryTree(pre, 0, pre.length - 1; 0);
+	
+}
+
+private TreeNode reConstructBinaryTree(int[] pre, int preL, int preR, int inL) {
+	if (preL > preR) return null;
+	TreeNode root = new TreeNode(pre[preL]);
+	int inIndex = indexForInOrders.get(inL);
+	int leftTreeSize = inIndex - inL;
+	root.left = reConstructBinaryTree(pre, preL + 1, pre + leftTreeSize, inL);
+	root.right = reConstructBinaryTree(pre, preL + leftTreeSize + 1, preR, inL + leftTreeSize + 1);
+	return root;
+}
+5.二叉树的下一个结点
+https://github.com/CyC2018/CS-Notes/blob/master/notes/8.%20二叉树的下一个结点.md
+public TreeLinkNode GetNext(TreeLinkNode pNode) {
+	if (pNode.right != null) {
+		TreeLinkNode p = pNode.right;
+		while (p.left != null) {
+			p = p.left;
+		}
+		return p;
+	} else {
+		TreeLinkNode p = pNode.next;
+		while (p != null) {
+			TreeLinkNode pp = p.next;
+			if (p == pp.left) {
+				return pp;
+			}
+			p = p.next;
+		}
+		return null;
+	}
+	return null;
+}
+6.用两个栈实现队列
+https://github.com/CyC2018/CS-Notes/blob/master/notes/9.%20用两个栈实现队列.md
+Stack<Integer> in = new Stack<Integer>();
+Stack<Integer> out = new Stack<Integer>();
+
+public void push(int node) {
+	in.push(node);
+}
+
+public int pop() throws Exception {
+	if (out.isEmpty()) {
+		while (!in.isEmpty()) {
+			out.push(in.pop());
+		}
+	}
+	if (out.isEmpty()) {
+		throw new IllegalArgumentException("queue is empty");
+	}
+	return out.pop();
+}

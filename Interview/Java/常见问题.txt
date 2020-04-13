@@ -1,0 +1,102 @@
+2018年算是收获的一年，趁着金三银四开始找工作。先分享一下offer的情况。希望能给2019马上找工作的你一点帮助~
+
+阿里高德(offer)
+爱奇艺(offer)
+腾讯视频(offer)
+小米(被拒)
+今日头条(被拒)
+在面试的过程中我深深的感受到，对于一个优秀的安卓开发来说，首先摆在第一位的还是他/她作为一个软件工程师的基本素养。无论你是做前端还是后端，最后定义你的优秀程度的还是作为软件工程师的基本素养，学习能力和编程能力，还有设计能力。
+
+下面分享一下各个公司的面试题目
+
+爱奇艺
+
+Android消息机制
+Android View绘制流程，当一个TextView的实例调用setText()方法后执行了什么
+Android dalvik虚拟机和Art虚拟机的优化升级点
+Android屏幕渲染机制
+热修复的原理，你都了解过哪几种热修复框架
+OkHttp的原理
+Android 线程池的实现原理
+JavaGC机制
+HashMap的实现机制，怎么样HashMap线程安全
+可重入锁的实现，公平锁非公平锁都是什么定义？
+都用过那些常用的数据结构，说说对树的了解？
+Activity启动模式，allowReparent的特点和栈亲和性
+WebView优化
+有没有Jni使用经验
+有使用过RxJava吗？
+说说你对设计模式的理解，开发过程中主要用到了哪些设计模式？
+快排写一下，动态规划了解吗？
+小米
+
+冒泡排序的链表实现
+写个快排
+写个单例模式
+Activity启动模式
+异常生命周期
+从点击应用图标到进入应用，Android系统都做了哪些工作，期间涉及到的进程切换有哪些？
+说说你了解的IPC方法
+说说Binder的大体实现
+怎么控制另外一个进程的View显示
+广播中怎么进行网络请求
+说说Android中线程池的实现
+HashMap如果Hash冲突了怎么解决？
+双线程通过线程同步的方式打印12121212…….
+腾讯
+
+HTTPS是怎么实现的？
+Android事件传递流程和OnTouchListener的关系
+Activity启动模式
+Android线程池实现原理
+双指缩放拖动大图
+客户端网络安全实现
+Webview优化
+Android应用保活
+RemoteViews实现和使用场景
+RecyclerView绘制步骤和复用机制
+Binder的大体设计模式
+Activity遵循什么设计模式
+EventBus源码解析，遵循什么设计模式
+Handler为什么会发生内存泄漏
+Java内存模块分区和GC机制，GC算法有哪些
+Finalize机制
+强引用 弱引用 软引用 虚引用的区别和使用场景
+LeakCanary的使用和实现原理
+介绍一下你在开发过程中使用到的设计模式
+快排
+对服务器众多错误码的处理（错误码有好几万个）
+阿里
+
+Android消息机制
+Android事件传递流程
+Android View绘制流程
+Activity启动模式
+Android IPC机制
+Android线程池设计原理
+EventBus源码和设计模式
+Android应用保活
+Android UI优化
+Android启动优化
+快排 堆排 单例
+进程线程在操作系统中的实现
+HTTPS的组成是什么？
+ClassLoader的双亲委托
+Android中的ClassLoader
+有过Jni使用经验吗？
+有过跨平台开发经验吗？
+今日头条
+
+视频加密
+Android Native Crash
+视频组成
+播放器原理
+共同问到的
+
+为什么离职
+开发过程中遇到最深刻的BUG是什么
+当你的开发任务很紧张，你怎么去做代码优化的？
+怎么和你的同事沟通
+你对某某某互联网发生事情的看法？（直播答题等等）
+
+https://www.jianshu.com/p/1b2f63a45476

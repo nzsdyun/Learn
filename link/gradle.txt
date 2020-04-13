@@ -1,0 +1,9 @@
+https://docs.gradle.org/current/userguide/gradle_wrapper.html
+
+
+https://avatarqing.github.io/Gradle-Plugin-User-Guide-Chinese-Verision/build_variants/sourcesets_and_dependencies.html
+
+https://avatarqing.github.io/Gradle-Plugin-User-Guide-Chinese-Verision/basic_project/simple_build_files.html
+
+
+https://github.com/msdx/gradledoc

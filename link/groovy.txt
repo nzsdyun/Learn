@@ -1,0 +1,9 @@
+https://doc.yonyoucloud.com/doc/wiki/project/GradleUserGuide-Wiki/writing_build_scripts/some_groovy_basics.html
+2. api
+http://docs.groovy-lang.org/
+3.
+学习 Groovy（http://docs.groovy-lang.org/）
+学习 Gradle DSL（https://docs.gradle.org/current/javadoc/org/gradle/api/Project.html）
+学习 Android DSL和Task（http://google.github.io/android-gradle-dsl/current/index.html）
+4. 源码查看
+https://nancyyihao.github.io/2017/12/02/Read-Gradle-Source-Code-From-Android-Studio/
