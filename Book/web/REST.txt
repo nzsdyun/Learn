@@ -1,4 +1,0 @@
-1. RESTful 架构详解
-https://www.runoob.com/w3cnote/restful-architecture.html
-2.RESTful API 最佳实践
-http://www.ruanyifeng.com/blog/2018/10/restful-api-best-practices.html
