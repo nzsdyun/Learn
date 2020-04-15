@@ -1,6 +1,0 @@
--classpath 'D:\\window\\study\\Learn\\Groovy_example\\maven\\pomGeneration\\target\\classes\\main;D:\\window\\study\\Learn\\Groovy_example\\maven\\pomGeneration\\target\\resources\\main;D:\\window\\study\\Learn\\Groovy_example\\maven\\pomGeneration\\lib\\compile-1.0.jar;D:\\window\\study\\Learn\\Groovy_example\\maven\\pomGeneration\\lib\\providedCompile-1.0.jar'
--d 'D:\\window\\study\\Learn\\Groovy_example\\maven\\pomGeneration\\target\\docs\\javadoc'
--doctitle 'pomGeneration 1.0 API'
--quiet 
--windowtitle 'pomGeneration 1.0 API'
-'D:\\window\\study\\Learn\\Groovy_example\\maven\\pomGeneration\\src\\main\\java\\org\\MyClass.java'
