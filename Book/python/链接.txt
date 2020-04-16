@@ -1,0 +1,14 @@
+https://www.zhihu.com/question/20899988/answer/24923424
+
+https://www.zhihu.com/question/20039623/answer/64926634
+
+https://www.jianshu.com/p/e9bb36a5d63f
+
+//官网
+https://docs.python.org/3.7/library/functions.html?highlight=open#open
+
+https://docs.python.org/zh-cn/3/download.html
+1. Scrapy安装、爬虫入门教程、爬虫实例（豆瓣电影爬虫）
+https://www.cnblogs.com/Shirlies/p/4536880.html
+2.BeautifulSoup
+https://www.crummy.com/software/BeautifulSoup/bs4/doc/index.zh.html
